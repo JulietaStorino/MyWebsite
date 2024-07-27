@@ -51,62 +51,62 @@ textarea:focus, textarea:focus-visible {
 }
 
 /* Header styles */
-.head{
-  width: max-content;
+.nav{
+  width: full;
+  height: full;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
 }
 
-.head a{
-  color: rgb(32, 58, 20);
-  font-family: "Martian Mono", monospace;
-  font-weight: 400;
-  font-size: 1.2rem;
-  cursor: pointer;
-  text-decoration: inherit;
-}
-
-.head .head-img{
-  display: flex;
-  justify-content:flex-start;
-  margin-top: 100px;
-  margin-left: 200px;
+.nav .nav-img{
   height: 70px;
   width: auto;
 }
 
-.head .nav{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-  margin-right: 200px;
-  margin-top: 100px;
+.nav .nav-item{
+  color: rgb(32, 58, 20);
+  font-family: "Martian Mono", monospace;
+  font-size:100%;
+  cursor: pointer;
+  text-decoration: inherit;
 }
 
-.head .nav-list{
+.nav-list{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   list-style-type: none;
+  padding-right: 0%;
+  padding-left: 0%;
 }
 
-.head .nav-item{  
-  display: block;
-  margin-left: 100px;
-  margin-right: 100px;
+.nav-item, .nav-img{
+  display: flex;
 }
 
-.head .nav-item:hover {
-  font-size: 1.3rem;
+.nav-item:hover {
+  font-size: 1.1rem;
   color: rgb(32, 90, 50);
   transition: color ease-in-out;
 }
 
+@media (max-width: 1000px){
+  .nav .nav-img{
+    height: 50px;
+    width: auto;
+  }
+}
+
 /* Main styles */
 .AboutMe{
-  width: max-content;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
 }
 
 .AboutMe .AboutMe-text{
@@ -122,21 +122,17 @@ textarea:focus, textarea:focus-visible {
 }
 
 .AboutMe .AboutMe-text p{
-  margin-right: 10%;
   color: rgb(32, 58, 20);
   font-family: "Mada", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-.AboutMe .AboutMe-img{
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
 .AboutMe img{
   height: 800px;
   width: auto;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 

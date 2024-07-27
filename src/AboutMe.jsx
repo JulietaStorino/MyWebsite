@@ -1,7 +1,7 @@
 
 function AboutMe(){
     return(
-        <main className="AboutMe">
+        <div className="AboutMe">
             <div className="AboutMe-text">
                 <h1>
                     Hello, I'm Julieta Storino!
@@ -17,7 +17,7 @@ function AboutMe(){
             <div className="AboutMe-img">
                 <img src="/girlworking.png" alt="girlworking"></img>
             </div>
-        </main>
+        </div>
     )
 }
 
