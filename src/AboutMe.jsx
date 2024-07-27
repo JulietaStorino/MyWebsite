@@ -1,8 +1,8 @@
 
-function Home(){
+function AboutMe(){
     return(
-        <main className="home">
-            <div className="home-press">
+        <main className="AboutMe">
+            <div className="AboutMe-text">
                 <h1>
                     Hello, I'm Julieta Storino!
                     <br />
@@ -14,11 +14,11 @@ function Home(){
                     and always looking for new challenges and opportunities to learn. 
                 </p>
             </div>
-            <div className="home-img">
+            <div className="AboutMe-img">
                 <img src="/girlworking.png" alt="girlworking"></img>
             </div>
         </main>
     )
 }
 
-export default Home;
+export default AboutMe;
