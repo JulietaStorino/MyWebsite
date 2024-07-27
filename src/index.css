@@ -1,44 +1,16 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  text-align: center;
-  line-height: 1.1;
-}
-
-p {
-  margin: 10px 10px;
+a {
+  text-decoration: inherit;
 }
 
 input {
@@ -83,19 +55,94 @@ textarea:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Header styles */
+.head{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
 }
+
+.head a{
+  color: rgb(32, 58, 20);
+  font-family: "Martian Mono", monospace;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.head img{
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 100px;
+  margin-left: 200px;
+  height: 70px;
+  width: auto;
+}
+
+.head .nav{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 200px;
+  margin-top: 100px;
+}
+
+.head .nav-list{
+  display: flex;
+  list-style-type: none;
+}
+
+.head .nav-item{  
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.head .nav-item:hover {
+  font-size: 1.2rem;
+  color: rgb(32, 90, 50);
+  transition: color ease-in-out;
+}
+
+/* Main styles */
+.home{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+
+.home .home-press{
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.home h1{
+  color: rgb(20, 28, 58);
+  font-family: "Mada", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.home p{
+  margin-right: 10%;
+  color: rgb(20, 28, 58);
+  font-family: "Mada", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.home .home-img{
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.home .home-img img{
+  height: 800px;
+  width: auto;
+}
+
 
 /* Cards styles */
 

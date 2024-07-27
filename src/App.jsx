@@ -1,4 +1,5 @@
 import Header from './Header.jsx'
+import Home from './Home.jsx'
 import MyComponent from './MyComponent.jsx'
 import List from './List.jsx'
 import Card from './Card.jsx'
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Home></Home>
       <List items={fruit} category="Fruits"/>
       <MyComponent></MyComponent>
       <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="This is a card component that loves negrita" isLover={true}/>

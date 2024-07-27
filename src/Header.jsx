@@ -1,17 +1,15 @@
 
 function Header() {
   return (
-    <header>
-        <h1>My Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Proyects</a></li>
-                <li><a href="#">Contact</a></li>
+    <header className="head">
+        <img src="/logo.png" alt="logo"></img>
+        <nav className="nav">
+            <ul className="nav-list">
+                <li><a className="nav-item"  href="#">ABOUT ME</a></li>
+                <li><a className="nav-item" href="#">PROYECTS</a></li>
+                <li><a className="nav-item" href="#">CONTACTS</a></li>
             </ul>
         </nav>
-        <hr></hr>
     </header>
   );
 }
