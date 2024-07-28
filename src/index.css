@@ -188,6 +188,45 @@ textarea:focus, textarea:focus-visible {
   align-self: center;
 }
 
+.angle {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+.angle:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(42, 48, 30);
+}
+
+@media (min-width: 900px) {
+  .angle,
+  .angle:after {
+    height: 65px;
+  }
+}
+
+.angle1:after {
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 100%, 0 100%, 0 0);
+}
+
+.angle2:after {
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 0 0);
+          clip-path: polygon(100% 100%, 100% 0, 0 0);
+}
+
+
+
+
 
 @media (max-width: 1200px){
   .nav .nav-img{

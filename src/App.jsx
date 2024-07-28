@@ -19,7 +19,9 @@ function App() {
     <>
       <Header></Header>
       <AboutMe></AboutMe>
+      <div className="angle angle1"></div>
       <Proyects></Proyects>
+      <div className="angle angle2"></div>
       <List items={fruit} category="Fruits"/>
       <MyComponent></MyComponent>
       <Button></Button>
