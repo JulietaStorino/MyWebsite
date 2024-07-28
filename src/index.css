@@ -12,46 +12,6 @@ body {
   padding: 0;
 }
 
-input {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  margin: 10px 10px;
-  font-size: 1em;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-input:hover {
-  border-color: #646cff;
-}
-
-input:focus, input:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-textarea {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  margin: 10px 10px;
-  font-size: 1em;
-  font-weight: 500;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-textarea:hover {
-  border-color: #646cff;
-}
-
-textarea:focus, textarea:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 h1 {
   font-weight: 100;
   font-size: 1.5rem;
@@ -61,27 +21,6 @@ h1 {
 
 span {
   font-size: 3rem;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  margin: 10px 10px;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /* Header */
@@ -256,12 +195,54 @@ button:focus-visible {
 
 .Contact{
   width: full;
-  height: 600px;
+  height: full;
   padding: 5%;
   margin-left: 0%;
   margin-right: 0%;
   background-color: rgb(255, 255, 255);
   color: rgb(42, 48, 30);;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact input, textarea, button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 10px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: rgb(42, 48, 30);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.Contact textarea {
+  height: 150px;
+  width: 60%;
+  font-family: "Mada", sans-serif;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+.Contact input {
+  width: 60%;
+  height: 50px;
+}
+
+.Contact button {
+  width: 30%;
+  height: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 @media (max-width: 1200px){
