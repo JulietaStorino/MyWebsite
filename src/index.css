@@ -5,12 +5,13 @@
   font-palette:  rgb(255, 255, 255);
 }
 
-/* Components */
-
-body {
+* {
   margin: 0;
   padding: 0;
+  border: 0;
 }
+
+/* Components */
 
 h1 {
   font-weight: 100;
@@ -32,8 +33,6 @@ span {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 1%;
-  margin-left: 0%;
-  margin-right: 0%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -55,8 +54,6 @@ span {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  padding-right: 0%;
-  padding-left: 0%;
 }
 
 .nav-item, .nav-img{
@@ -78,8 +75,6 @@ span {
   align-items: center;
   justify-content: space-evenly;
   padding: 5%;
-  margin-left: 0%;
-  margin-right: 0%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -160,25 +155,15 @@ span {
   height: 40px;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  margin: 0;
-  padding: 0;
+
 }
 
 .angle:after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   height: 40px;
   width: 100%;
   background-color: rgb(42, 48, 30);
-}
-
-@media (min-width: 900px) {
-  .angle,
-  .angle:after {
-    height: 65px;
-  }
 }
 
 .angle1:after {
@@ -197,8 +182,6 @@ span {
   width: full;
   height: full;
   padding: 5%;
-  margin-left: 0%;
-  margin-right: 0%;
   background-color: rgb(255, 255, 255);
   color: rgb(42, 48, 30);;
   display: flex;
@@ -245,6 +228,30 @@ span {
   margin-bottom: 5%;
 }
 
+/* Footer */
+
+.foot{
+  width: full;
+  height: full;
+  padding: 3%;
+}
+
+.foot .foot-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.foot-item {
+  height: 30px;
+  width: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
 @media (max-width: 1200px){
   .nav .nav-img{
     height: 50px;
@@ -278,4 +285,11 @@ span {
     flex-direction: column;
   }
   
+}
+
+@media (min-width: 900px) {
+  .angle,
+  .angle:after {
+    height: 65px;
+  }
 }
