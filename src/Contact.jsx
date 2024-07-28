@@ -10,11 +10,11 @@ function Contact() {
                 Get In Touch. Ask for my resume or see if we can build something amazing together. I'd love to hear from you!
             </h1>
 
-            <form action="https://formsubmit.co/el/banise" method="POST">
-                <input type="text" placeholder="Full Name" required/>
-                <input type="email" placeholder="Email" required/>
-                <textarea placeholder="Message" required/>
-                <button>Send</button>
+            <form action="https://formsubmit.co/593e2e2b84a1aca9432719a4a1288223" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <textarea placeholder="Message" name="message" required/>
+                <button type="submit">Send</button>
             </form>
         </div>
     );
