@@ -23,8 +23,9 @@ function Contact() {
     };
 
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="Contact">
+            <h1><span>Contact</span><br/>Get In Touch. Ask for my resume or see if we can build something amazing together. I'd love to hear from you!</h1>
+
             <p>Name: {name}</p>
             
             <input type="text" value={name} onChange={handleNameChange} />
@@ -32,7 +33,7 @@ function Contact() {
             <p>Comment: {comment}</p>
             <textarea value={comment} onChange={handleCommentChange} placeholder="Leave a comment."/>
 
-            <button className={styles.button} onDoubleClick={(e) => handleClick("Bro",e)}>Click me!</button>
+            <button className="button" onDoubleClick={(e) => handleClick("Bro",e)}>Click me!</button>
         </div>
     );
 }
