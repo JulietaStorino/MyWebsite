@@ -1,8 +1,8 @@
 import Header from './Header.jsx'
 import AboutMe from './AboutMe.jsx'
+import Proyects from './Proyects.jsx'
 import MyComponent from './MyComponent.jsx'
 import List from './List.jsx'
-import Card from './Card.jsx'
 import Button from './Button/Button.jsx';
 import Footer from './Footer.jsx'
 
@@ -19,12 +19,9 @@ function App() {
     <>
       <Header></Header>
       <AboutMe></AboutMe>
+      <Proyects></Proyects>
       <List items={fruit} category="Fruits"/>
       <MyComponent></MyComponent>
-      <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="This is a card component that loves negrita" isLover={true}/>
-      <Card img="https://upload.wikimedia.org/wikipedia/commons/b/b7/Edificio_FAMAF_%28UNC%29.jpg" alt="FaMAF picture" title="Man I Love FaMAF" text="This is a card component that loves FaMAF" isLover={false}/>
-      <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="This is a card component that loves negrita" isLover={true}/>
-      <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="This is a card component that loves negrita" isLover={true}/>
       <Button></Button>
       <Footer></Footer>
     </>

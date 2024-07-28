@@ -1,6 +1,8 @@
 :root {
   color-scheme: light dark;
-  background-color: #242424;
+  background-color: rgb(42, 48, 30);
+  font-family: "Mada", sans-serif;
+  font-palette:  rgb(255, 255, 255);
 }
 
 body {
@@ -15,7 +17,6 @@ input {
   margin: 10px 10px;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -36,7 +37,6 @@ textarea {
   margin: 10px 10px;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -69,7 +69,7 @@ textarea:focus, textarea:focus-visible {
 }
 
 .nav .nav-item{
-  color: rgb(32, 58, 20);
+  color: rgb(42, 48, 30);
   font-family: "Martian Mono", monospace;
   font-size:100%;
   cursor: pointer;
@@ -98,39 +98,98 @@ textarea:focus, textarea:focus-visible {
 /* Main styles */
 .AboutMe{
   width: full;
-  height: full;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 0%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
+  padding: 5%;
   margin-left: 0%;
   margin-right: 0%;
   background-color: rgb(255, 255, 255);
 }
 
 .AboutMe .AboutMe-text{
-  color: rgb(32, 58, 20);
-  font-family: "Mada", sans-serif;
+  color: rgb(42, 48, 30);
   font-weight: 400;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  
 }
 
 .AboutMe .AboutMe-text span{
-  color: rgb(32, 58, 20);
-  font-family: "Mada", sans-serif;
+  color: rgb(42, 48, 30);
   font-weight: 400;
   font-size: 3rem;
 }
 
 .AboutMe .AboutMe-img{
+  padding-left: 5%;
+  padding-right: 5%;
   width: 600px;
   height: auto;
+  display: flex;
+  align-self: center;
 }
 
-@media (max-width: 1000px){
+/* Projects styles */
+.Proyects{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Proyects h1{
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.Proyects span{
+  font-size: 3rem;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 50%;
+  height: 400px;
+}
+
+.card .card-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  align-self: center;
+
+}
+
+.card .card-text{
+  font-family: "Mada", sans-serif;
+  font-palette:  rgb(255, 255, 255);
+  align-self: center;
+}
+
+
+@media (max-width: 1200px){
   .nav .nav-img{
     height: 50px;
     width: auto;
@@ -138,6 +197,8 @@ textarea:focus, textarea:focus-visible {
 
   .AboutMe{
   flex-direction: column;
+  height: 750px;
+
   }
 
   .AboutMe .AboutMe-text{
@@ -146,47 +207,19 @@ textarea:focus, textarea:focus-visible {
   }
   
   .AboutMe .AboutMe-text span{
-    color: rgb(32, 58, 20);
-    font-family: "Mada", sans-serif;
+    color: rgb(42, 48, 30);
     font-weight: 500;
     font-size: 2rem;
   }
 
   .AboutMe .AboutMe-img{
-    width: 400px;
+    width: 70%;
     height: auto;
+    display: flex;
   }
 
-}
-
-/* Cards styles */
-
-.card{
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(120, 120, 120, 0.381);
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-}
-
-.card .card-img{
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.card .card-title{
-  font-family: Arial, sans-serif;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.card .card-text{
-  font-family: Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.87);
+  .card{
+    flex-direction: column;
+  }
+  
 }
