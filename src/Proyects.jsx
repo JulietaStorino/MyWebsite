@@ -23,7 +23,7 @@ Card.propTypes = {
 
 function Proyects() {
   return (
-    <div className="Proyects">
+    <div className="Proyects" id="MyProyects">
       <h1><span>Proyects</span><br/>A selection of stuff I've Built</h1>
       <div className="cards">
         <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="In process"/>

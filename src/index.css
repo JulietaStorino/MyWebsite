@@ -26,9 +26,10 @@ span {
 
 /* Header */
 
-.nav{
+header {
   width: full;
   height: full;
+  overflow: hidden;
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
@@ -36,34 +37,50 @@ span {
   background-color: rgb(255, 255, 255);
 }
 
-.nav .nav-img{
-  height: 70px;
-  width: auto;
+.wraper {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
 }
 
-.nav .nav-item{
+header .logo {
+  height: 70px;
+  width: auto;
+  float: left;
+}
+
+header nav{
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav a{
   color: rgb(42, 48, 30);
   font-family: "Martian Mono", monospace;
   font-size:100%;
   cursor: pointer;
-  text-decoration: inherit;
+  text-decoration: none;
+  line-height: normal;
+  padding: 5%;
+  -webkit-transition:all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
-.nav-list{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.nav-item, .nav-img{
-  display: flex;
-}
-
-.nav-item:hover {
+header .nav-item:hover {
   font-size: 1.1rem;
   color: rgb(32, 90, 50);
   transition: color ease-in-out;
+}
+
+.header2 {
+  position: fixed;
+  height: 100px;
+}
+
+.header2 nav {
+  line-height: 100px;
 }
 
 /* Main */
