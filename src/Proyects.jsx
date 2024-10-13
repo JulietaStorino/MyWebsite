@@ -26,9 +26,9 @@ function Proyects() {
     <div className="Proyects" id="MyProyects">
       <h1><span>Proyects</span><br/>A selection of stuff I've Built</h1>
       <div className="cards">
-        <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="In process"/>
+        <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Negrita card" text="In process"/>
         <Card img="https://upload.wikimedia.org/wikipedia/commons/b/b7/Edificio_FAMAF_%28UNC%29.jpg" alt="FaMAF picture" title="Man I Love FaMAF" text="In process"/>
-        <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Nigga card" text="In process"/>
+        <Card img="https://pngimg.es/d/dog_PNG2449.png" alt="Little diggie that looks like negrita" title="Negrita card" text="In process"/>
         <Card img="https://upload.wikimedia.org/wikipedia/commons/b/b7/Edificio_FAMAF_%28UNC%29.jpg" alt="FaMAF picture" title="Man I Love FaMAF" text="In process"/>
       </div>
     </div>
